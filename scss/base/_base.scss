@@ -9,7 +9,9 @@ body {
 	font-style: $stack-sans-serif
 }
 
-h1 {
+h1,
+.fa-toggle-on,
+.fa-toggle-off {
 	color: $color-sec;
 	@extend %centered;
 }

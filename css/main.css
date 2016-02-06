@@ -1,3 +1,14 @@
+h1,
+.fa-toggle-on,
+.fa-toggle-off, h2, a, h3, ul, p {
+  text-align: center; }
+
+header:after, .intro-container:after, footer:after, .footer-nav:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -354,15 +365,6 @@ td,
 th {
   padding: 0; }
 
-h1, h2, a, h3, ul, p {
-  text-align: center; }
-
-header:after, .intro-container:after, .footer-nav:after {
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both; }
-
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -372,7 +374,9 @@ body {
   background: #d9d9d9;
   font-style: Helvetica, Arial, sans-serif; }
 
-h1 {
+h1,
+.fa-toggle-on,
+.fa-toggle-off {
   color: #595959; }
 
 h2 {
@@ -407,33 +411,38 @@ h1 {
       float: left;
       padding-bottom: 0; } }
 
+.fa-toggle-on,
+.fa-toggle-off {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .fa-toggle-on,
+    .fa-toggle-off {
+      display: none; } }
+
 @media (min-width: 768px) {
+  nav {
+    width: 50%;
+    margin: 0 auto; } }
+@media (min-width: 1024px) {
   nav {
     width: 35%;
     float: right;
     margin-top: 1.25rem; } }
-
-@media (min-width: 768px) {
-  nav ul {
-    width: 50%;
-    margin: 0 auto; } }
 @media (min-width: 1024px) {
   nav ul {
     width: 100%;
     margin: 0 auto; } }
-
-nav li {
+nav ul li {
   background: #fff;
   margin: 0.25rem;
   width: 100%; }
   @media (min-width: 768px) {
-    nav li {
+    nav ul li {
       width: 33%;
       float: left;
       margin: 0;
       background: #f2f2f2; } }
-
-nav li a {
+nav ul li a {
   display: block;
   padding: 1rem; }
 
@@ -520,19 +529,17 @@ footer {
   @media (min-width: 1024px) {
     footer {
       padding-bottom: 0; } }
-
-footer h3 {
-  width: 40%;
-  float: left;
-  text-align: left; }
-  @media (min-width: 768px) {
-    footer h3 {
-      padding: 0; } }
-
-footer a {
-  margin: 1rem 0 0 0;
-  display: block;
-  float: right; }
+  footer h3 {
+    width: 40%;
+    float: left;
+    text-align: left; }
+    @media (min-width: 768px) {
+      footer h3 {
+        padding: 0; } }
+  footer a {
+    margin: 1rem 0 0 0;
+    display: block;
+    float: right; }
 
 @media (min-width: 768px) {
   #footer-back-to-top {
@@ -543,28 +550,24 @@ footer a {
   @media (min-width: 768px) {
     .footer-nav {
       display: block; } }
-
-@media (min-width: 768px) {
-  .footer-nav ul {
-    width: 30%;
-    float: right;
-    margin: 1rem 0 0 0; } }
-
-@media (min-width: 768px) {
-  .footer-nav li {
-    width: 33%;
-    float: left; } }
-
-@media (min-width: 768px) {
-  .footer-nav ul li a {
-    font-size: 0.5rem;
-    display: block;
-    margin: 0; } }
+  @media (min-width: 768px) {
+    .footer-nav ul {
+      width: 30%;
+      float: right;
+      margin: 1rem 0 0 0; } }
+  @media (min-width: 768px) {
+    .footer-nav li {
+      width: 33%;
+      float: left; } }
+  @media (min-width: 768px) {
+    .footer-nav a {
+      font-size: 0.5rem;
+      display: block;
+      margin: 0; } }
 
 @media (min-width: 768px) {
   #contact {
     padding: 1rem; } }
-
 @media (min-width: 768px) {
   #contact p {
     width: 65%;

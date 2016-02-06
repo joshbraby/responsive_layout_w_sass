@@ -11,36 +11,41 @@ h1 {
 	}
 }
 
-nav {
+.fa-toggle-on,
+.fa-toggle-off {
+	width: 100%;
 	@media #{$brk-narrow} {
-		@include boxFloat(35%, right);
-		margin-top: 1.25rem;
-	}
+		display: none;
+	}	
 }
 
-nav ul {
+nav {
 	@media #{$brk-narrow} {
 		width: 50%;
 		margin: 0 auto;
-	}
+	}	
 	@media #{$brk-wide} {
-		width: 100%;
-		margin: 0 auto;
+		@include boxFloat(35%, right);
+		margin-top: 1.25rem;
 	}
-}
-
-nav li {
-	background: $bckgnd-white;
-	margin: 0.25rem;
-	width: 100%;
-	@media #{$brk-narrow} {
-		@include boxFloat(33%, left);
-		margin: 0;
-		background: $bckgnd-sec;
+	ul {
+		@media #{$brk-wide} {
+			width: 100%;
+			margin: 0 auto;
+		}
+		li {
+			background: $bckgnd-white;
+			margin: 0.25rem;
+			width: 100%;
+			@media #{$brk-narrow} {
+				@include boxFloat(33%, left);
+				margin: 0;
+				background: $bckgnd-sec;
+			}
+		}
+		li a {
+				display: block;
+				padding: 1rem;
+		}
 	}
-}
-
-nav li a {
-	display: block;
-	padding: 1rem;
 }

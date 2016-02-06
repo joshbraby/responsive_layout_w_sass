@@ -3,26 +3,25 @@ footer {
 	margin: 0 auto;
 	border-top: .2rem solid $bckgnd-prim;
 	padding: 1rem 0 1rem;
+	@extend %clearfix;
 	@media #{$brk-narrow} {
 		padding-bottom: 2rem;
 	}
 	@media #{$brk-wide} {
 		padding-bottom: 0;
 	}
-}
-
-footer h3 {	
-	@include boxFloat(40%, left);
-	text-align: left;
-	@media #{$brk-narrow} {
-		padding: 0;
+	h3 {	
+		@include boxFloat(40%, left);
+		text-align: left;
+		@media #{$brk-narrow} {
+			padding: 0;
+		}
 	}
-}
-
-footer a {
-	margin: 1rem 0 0 0;
-	display: block;
-	float: right;
+	a {
+		margin: 1rem 0 0 0;
+		display: block;
+		float: right;
+	}
 }
 
 #footer-back-to-top {
@@ -37,26 +36,23 @@ footer a {
 	@media #{$brk-narrow} {
 		display: block;
 	}
-}
-
-.footer-nav ul {
-	@media #{$brk-narrow} {
-		@include boxFloat(30%, right);
-		margin: 1rem 0 0 0;
+	ul {
+		@media #{$brk-narrow} {
+			@include boxFloat(30%, right);
+			margin: 1rem 0 0 0;
+		}
 	}
-}
-
-.footer-nav li {
-	@media #{$brk-narrow} {
-		@include boxFloat(33%, left);
+	li {
+		@media #{$brk-narrow} {
+			@include boxFloat(33%, left);
+		}
 	}
-}
-
-.footer-nav ul li a {
-	@media #{$brk-narrow} {
-		font-size: 0.5rem;
-		display: block;
-		margin: 0;
+	a {
+		@media #{$brk-narrow} {
+			font-size: 0.5rem;
+			display: block;
+			margin: 0;
+		}
 	}
 }
 
@@ -64,14 +60,13 @@ footer a {
 	@media #{$brk-narrow} {
 		padding: 1rem;
 	}	
-}
-
-#contact p {
-	@media #{$brk-narrow} {
-		width: 65%;
-		margin: 1rem auto;
-	}
-	@media #{$brk-wide} {
-		width: 45%;
+	p {
+		@media #{$brk-narrow} {
+			width: 65%;
+			margin: 1rem auto;
+		}
+		@media #{$brk-wide} {
+			width: 45%;
+		}
 	}
 }
