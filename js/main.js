@@ -1,6 +1,8 @@
 $(function() {
   
-    var i = 1;
+    var i = 1; //toggle variable
+
+    var $nav = $('nav');
 
     $('.fa-toggle-off').hide();
 
@@ -8,9 +10,9 @@ $(function() {
         $(this).hide();
         $(this).siblings().show();
         if(i % 2) {
-            $('nav').hide();
+            $nav.hide();
         } else {
-            $('nav').show();
+            $nav.show();
         }
         i++;
     })
@@ -21,11 +23,11 @@ $(function() {
     
         if (mediaQueryList.matches) {
             $('.fa').hide();
-            $('nav').show();
+            $nav.show();
         }
         else {
             $('.fa-toggle-on').show();
-            $('nav').show();
+            $nav.show();
         }
         
     };
