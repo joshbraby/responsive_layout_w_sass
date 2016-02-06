@@ -1,0 +1,39 @@
+.container {
+	background: $bckgnd-sec;
+	width: 90%;
+	color: $color-prim;
+	margin: 0 auto;
+	@media #{$brk-wide} {
+		max-width: 1200px;
+	}
+}
+
+.profile-pic-container {
+	width: 60%;
+	margin: 2rem auto;
+	@media #{$brk-narrow} {
+		@include boxFloat(20%, right);
+		margin-right: 10%
+	}
+}
+
+.section-image-container {
+	width: 100%;
+}
+
+#portfolio {
+	background: $bckgnd-white;
+	padding: 1rem 0;
+}
+
+.intro-container {
+	@extend %clearfix;
+}
+
+.intro-container p {
+	@media #{$brk-narrow} {
+		@include boxFloat(55%, left);
+		margin: 2rem 2.5% 0 5%;
+		text-align: left;	
+	}
+}

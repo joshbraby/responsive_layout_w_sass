@@ -1,0 +1,46 @@
+header {
+	@extend %clearfix;
+}
+
+h1 {
+	padding: 2rem 0 1rem;
+	margin: 0;
+	@media #{$brk-wide} {
+		@include boxFloat(30%,left);
+		padding-bottom: 0;
+	}
+}
+
+nav {
+	@media #{$brk-narrow} {
+		@include boxFloat(35%, right);
+		margin-top: 1.25rem;
+	}
+}
+
+nav ul {
+	@media #{$brk-narrow} {
+		width: 50%;
+		margin: 0 auto;
+	}
+	@media #{$brk-wide} {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+nav li {
+	background: $bckgnd-white;
+	margin: 0.25rem;
+	width: 100%;
+	@media #{$brk-narrow} {
+		@include boxFloat(33%, left);
+		margin: 0;
+		background: $bckgnd-sec;
+	}
+}
+
+nav li a {
+	display: block;
+	padding: 1rem;
+}

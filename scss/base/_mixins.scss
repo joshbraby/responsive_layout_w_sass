@@ -1,0 +1,6 @@
+// text mixin
+
+@mixin boxFloat($width, $float) {
+	width: $width;
+	float: $float;
+}

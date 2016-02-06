@@ -1,0 +1,48 @@
+section {
+	padding: 1rem;
+	@media #{$brk-narrow} {
+		@include boxFloat(46%, left);
+		min-height: 24rem;
+		padding: 0;
+	}
+	@media #{$brk-wide} {
+		@include boxFloat(30.5%, left);
+		min-height: 22rem;
+		padding: 0;
+	}
+}
+
+section:nth-child(even) {
+	@media #{$brk-narrow} {
+	    margin-left: 3%;
+	    margin-right: 1%;
+	}
+}
+
+section:nth-child(odd) {
+	@media #{$brk-narrow} {
+		margin-left: 1%;
+		margin-right: 3%;
+	}
+}
+
+section:nth-child(3n+1) {
+	@media #{$brk-wide} {
+	    margin-left: 1%;
+	    margin-right: 2%;
+	}
+}
+
+section:nth-child(3n+2) {
+	@media #{$brk-wide} {
+		margin-left: 2%;
+		margin-right: 1%;
+	}
+}
+
+section:nth-child(3n+3) {
+	@media #{$brk-wide} {
+	   	margin-left: 1%;
+		margin-right: 1%; 
+	}
+}

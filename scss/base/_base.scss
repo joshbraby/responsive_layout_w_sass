@@ -1,0 +1,48 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	background: $bckgnd-prim;
+	font-style: $stack-sans-serif
+}
+
+h1 {
+	color: $color-sec;
+	@extend %centered;
+}
+
+h2 {
+	@extend %centered;
+	font-size: 1.15rem;
+}
+
+a, h3 {
+	color: $color-sec;
+	font-weight: bold;
+	@extend %centered;
+	font-size: 0.9rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0 1rem 1rem;
+	padding: 0;
+	@extend %centered;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	margin: 1rem;
+	line-height: 1.5rem;
+	@extend %centered;
+}
