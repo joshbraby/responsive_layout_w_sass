@@ -8,16 +8,16 @@ footer {
 	border-top: .2rem solid $bckgnd-prim;
 	padding: 1rem 0 1rem;
 	@extend %clearfix;
-	@media #{$brk-narrow} {
+	@include break(tablet) {
 		padding-bottom: 2rem;
 	}
-	@media #{$brk-wide} {
+	@include break(desktop) {
 		padding-bottom: 0;
 	}
 	h3 {	
 		@include boxFloat(40%, left);
 		text-align: left;
-		@media #{$brk-narrow} {
+		@include break(tablet) {
 			padding: 0;
 		}
 	}
@@ -29,7 +29,7 @@ footer {
 }
 
 #footer-back-to-top {
-	@media #{$brk-narrow} {
+	@include break(tablet) {
 			display: none;
 		}
 	}
@@ -37,22 +37,22 @@ footer {
 .footer-nav {
 	display: none;
 	@extend %clearfix;
-	@media #{$brk-narrow} {
+	@include break(tablet) {
 		display: block;
 	}
 	ul {
-		@media #{$brk-narrow} {
+		@include break(tablet) {
 			@include boxFloat(30%, right);
 			margin: 1rem 0 0 0;
 		}
 	}
 	li {
-		@media #{$brk-narrow} {
+		@include break(tablet) {
 			@include boxFloat(33%, left);
 		}
 	}
 	a {
-		@media #{$brk-narrow} {
+		@include break(tablet) {
 			font-size: 0.5rem;
 			display: block;
 			margin: 0;
@@ -61,15 +61,15 @@ footer {
 }
 
 #contact {
-	@media #{$brk-narrow} {
+	@include break(tablet) {
 		padding: 1rem;
 	}	
 	p {
-		@media #{$brk-narrow} {
+		@include break(tablet) {
 			width: 65%;
 			margin: 1rem auto;
 		}
-		@media #{$brk-wide} {
+		@include break(desktop) {
 			width: 45%;
 		}
 	}
